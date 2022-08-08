@@ -1,0 +1,220 @@
+@charset "utf-8";
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #242424;
+    z-index: 100;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.footerFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 60px;
+}
+
+#sns_sec{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+#sns_sec #snsMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#sns_sec #snsMenu li{
+    float: left;
+    margin-right: 40px;
+}
+#sns_sec #snsMenu li a{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+#sns_sec #privacyMenu{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+#sns_sec #privacyMenu li{
+    float: left;
+    margin-right: 20px;
+}
+#sns_sec #privacyMenu li a{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+#sns_sec hr{
+    display: none;
+}
+#sns_sec .grayText{
+    color: #999;
+}
+
+#sns_sec span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+#footerMenu_sec{
+    width: 20%;
+}
+#footerMenu_sec #menuList li{
+    height: 54px;
+}
+#footerMenu_sec #menuList li a{
+    font-size: 3.6em;
+    font-weight: bold;
+}
+#footerMenu_sec #underMenu{
+    padding-top: 60px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+#footerMenu_sec #underMenu a{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#contact_sec{
+    width: 30%;
+}
+.contactBox h3{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.contactBox p, .contactBox a{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 18px;
+}
+#contact_sec .contactBox{
+    margin-bottom: 34px;
+}
+
+
+/* ======================================================================================================= */
+
+
+@media all and (max-width: 1440px){
+    footer{
+        position: relative;
+        width: 100%;
+        background-color: #242424;
+        z-index: 100;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+    .footerFlex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 50px 24px 60px 24px;
+    }
+    
+    #sns_sec{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    #sns_sec #snsMenu{
+        position: static;
+        top: 0;
+        left: 0;
+        margin-bottom: 33px;
+    }
+    #sns_sec #snsMenu li{
+        float: left;
+        margin-right: 40px;
+    }
+    #sns_sec #snsMenu li a{
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    #sns_sec #privacyMenu{
+        position: static;
+        bottom: 30px;
+        left: 0;
+        margin-bottom: 24px;
+    }
+    #sns_sec #privacyMenu li{
+        float: none;
+        margin-right: 20px;
+        margin-bottom: 7px;
+    }
+    #sns_sec #privacyMenu li a{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    #sns_sec hr{
+        display: block;
+        border-color: #707070;
+        margin-bottom: 24px;
+    }
+    #sns_sec .grayText{
+        color: #999;
+    }
+    
+    #sns_sec span{
+        position: static;
+        bottom: 0;
+        left: 0;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    
+    
+    #footerMenu_sec{
+        order: 1;
+        width: 100%;
+    }
+    #footerMenu_sec #menuList li{
+        height: 48px;
+    }
+    #footerMenu_sec #menuList li a{
+        font-size: 3.2em;
+        font-weight: bold;
+    }
+    #footerMenu_sec #underMenu{
+        padding-top: 60px;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #footerMenu_sec #underMenu a{
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    
+    #contact_sec{
+        order: 2;
+        width: 100%;
+    }
+    .contactBox h3{
+        font-size: 1.4em;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #999;
+    }
+    .contactBox p, .contactBox a{
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    #contact_sec .contactBox{
+        margin-bottom: 34px;
+    }
+}

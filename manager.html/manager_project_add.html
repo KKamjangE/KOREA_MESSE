@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAMESSE</title>
+    <link rel="stylesheet" href="./manager.css/reset.css">
+    <link rel="stylesheet" href="./manager.css/manager_project_add.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h3>코리아메쎄 관리모드</h3>
+            <a href="manager_login.html">로그아웃</a>
+        </header>
+        <div id="content">
+            <div id="menu_sec">
+                <ul id="main_menu">
+                    <li><a href="manager_main.html">메인관리</a></li>
+                    <li><a href="manager_exhibition.html">전시관리</a></li>
+                    <li><a href="manager_project.html" class="select">프로젝트관리</a></li>
+                    <li><a href="manager_news.html">뉴스관리</a></li>
+                    <li><a href="manager_category_exhibition.html">카테고리관리</a>
+                    </li>
+                </ul>
+            </div> <!--menu_sec-->
+            <div id="content_sec">
+                <h3>프로젝트 등록</h3>
+                <form action="#" method="post">
+                    <ul class="table table_ko">
+                        <h3>국문</h3>
+                        <li>
+                            <label for="title1_ko">프로젝트명</label>
+                            <input id="title1_ko" type="text" placeholder="프로젝트명" autofocus>
+                        </li>
+                        <li>
+                            <label for="title_address_ko">고객사</label>
+                            <input id="title_address_ko" type="text" placeholder="고객사명">
+                        </li>
+                        <li>
+                            <label for="title_address_ko">기간</label>
+                            <input id="title_address_ko" type="text" placeholder="프로젝트 기간 (예: 2022년 5월 30일 ~ 31일)">
+                        </li>
+                        <li class="list_info">
+                            <label for="title_info">내용</label>
+                            <textarea name="title_info" id="title_info" cols="" rows=""></textarea>
+                        </li>
+                    </ul> <!--table-->
+                    <ul class="table table_en">
+                        <h3>영문</h3>
+                        <li>
+                            <label for="title1_ko">프로젝트명</label>
+                            <input id="title1_ko" type="text" placeholder="프로젝트명" autofocus>
+                        </li>
+                        <li>
+                            <label for="title_address_ko">고객사</label>
+                            <input id="title_address_ko" type="text" placeholder="고객사명">
+                        </li>
+                        <li>
+                            <label for="title_address_ko">기간</label>
+                            <input id="title_address_ko" type="text" placeholder="프로젝트 기간 (예: 2022년 5월 30일 ~ 31일)">
+                        </li>
+                        <li class="list_info">
+                            <label for="title_info">내용</label>
+                            <textarea name="title_info" id="title_info" cols="" rows=""></textarea>
+                        </li>
+                    </ul>
+                    <ul class="table">
+                        <h4>카테고리</h4>
+                        <li>
+                            <label for="category">구분</label>
+                            <select name="category" id="category">
+                                <option value="년도">년도</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="table">
+                        <h4>대표사진</h4>
+                        <p>jpg 또는 png 최대 1장 등록 가능, 1920*1080 px, 500kb</p>
+                        <li class="file_sec">
+                            <p>첨부</p>
+                            <label for="title_file3">파일선택</label>
+                            <input id="title_file3" type="file" value="" onchange="fileUp3()">
+                            <p class="file_name" id="file_name3">첨부된 파일 없음</p>
+                            <span style="display: none;">삭제</span>
+                        </li>
+                    </ul>
+                </form>
+                <div id="add_btn">
+                    <form action="#" method="post">
+                        <input type="button" value="등록">
+                    </form>
+                </div>
+                <div id="list_btn">
+                    <form action="#" method="post">
+                        <input type="button" value="목록">
+                    </form>
+                </div>
+            </div> <!--content_sec-->
+        </div> <!--content-->
+    </div> <!--wrap-->
+    <script type="text/javascript">
+        const file1 = document.getElementById('title_file1');
+        const file_name1 = document.getElementById('file_name1');
+        const file2 = document.getElementById('title_file2');
+        const file_name2 = document.getElementById('file_name2');
+        const file3 = document.getElementById('title_file3');
+        const file_name3 = document.getElementById('file_name3');
+        function fileUp1() {
+            let fileVal = file1.value;
+            file_name1.innerText = fileVal;
+        }
+        function fileUp2() {
+            let fileVal = file2.value;
+            file_name2.innerText = fileVal;
+        }
+        function fileUp3() {
+            let fileVal = file3.value;
+            file_name3.innerText = fileVal;
+        }
+    </script>
+</body>
+</html>

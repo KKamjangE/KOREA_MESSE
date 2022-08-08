@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAMESSE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <header></header> <!--header-->
+        <div id="header_bottom"></div>
+
+        <div id="search_pop" style="display: none;">
+            <div id="pop_close_btn" onclick="closeBtn()"></div>
+            <form onsubmit="return false">
+                <input id="project_search_mob" type="text" value="" placeholder="검색어를 입력하세요." spellcheck="false" autocomplete="off" required>
+                <input id="search_btn_mob" type="submit" value="" onclick="filter('project_search_mob')">
+            </form>
+        </div>
+
+        <div id="container">
+
+            <div id="content01">
+                <div id="project_title">
+                    <div class="title_size">
+                        <h3>Project</h3>
+                        <span id="search_btn_mob_pop" onclick="searchPop()"></span>
+                        <div id="project_menu">
+                            <ul>
+                                <li class="all menu_select">ALL</li>
+                                <li class="america">2022</li>
+                                <li class="asia">2021</li>
+                                <li class="europe">2020</li>
+                                <li class="europe">2019</li>
+                            </ul>
+                            <form onsubmit="return false">
+                                <input id="project_search" type="text" value="" placeholder="검색어를 입력하세요." spellcheck="false" autocomplete="off">
+                                <input id="search_btn" type="submit" value="" onclick="filter('project_search')">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--content01-->
+            <div id="content01_bg"></div>
+
+            <div id="content02">
+                <div class="wBox">
+                    <div class="sizeBox">
+                        <div id="project_content">
+                        
+                            <ul>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">CES2021 K-Startup 전시 운영<img class="new_badge" src="./assets/img/icon/new-badge.svg" alt="new-badge"></p><span class="customer">창업진흥원</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">CES2021 연계 온라인 수출 상담회</p><span class="customer">경기도경제과학진흥원</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">라이프스타일 베트남 온라인 수출 상담회</p><span class="customer">서울산업진흥원</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">농업기술분야 온라인 수출 상담회</p><span class="customer">농업실용화재단</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">경북 온라인 ASD 마케팅 및 온라인 수출 상담회</p><span class="customer">한국무역협회 대구경북지역본부</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">NYNOW 한국관 운영</p><span class="customer">중소기업중앙회</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">ASD Market Week 한국관 전시 총괄 운영</p><span class="customer">중소기업중앙회, 한국무역협회, KOTRA</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">자유무역지역 온라인 수출 상담회</p><span class="customer">전북테크노파크</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">여성기업 미주지역 온라인 수출 상담회</p><span class="customer">여성기업종합지원센터</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                                <li class="project">
+                                    <a href="#">
+                                        <span class="year">2021</span><p class="project_name">소재/부품/장비 온라인 수출 상담회</p><span class="customer">부산경제진흥원</span>
+                                        <img class="project_img" src="./assets/img/main/organization-2.jpg" alt="organization-2">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div id="learn_more_btn">
+                                <span>더 보기</span>
+                            </div>
+                        </div> <!--project_content-->
+                    </div> <!--sizeBox-->
+                </div> <!--wBox-->
+            </div> <!--content02-->
+
+        </div> <!--container-->
+
+        <footer id="footer"></footer> <!--footer-->
+        
+    </div> <!--wrap-->
+    
+    <script src="js/project.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAMESSE</title>
+    <link rel="stylesheet" href="./manager.css/reset.css">
+    <link rel="stylesheet" href="./manager.css/manager_news_add.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h3>코리아메쎄 관리모드</h3>
+            <a href="manager_login.html">로그아웃</a>
+        </header>
+        <div id="content">
+            <div id="menu_sec">
+                <ul id="main_menu">
+                    <li><a href="manager_main.html">메인관리</a></li>
+                    <li><a href="manager_exhibition.html">전시관리</a></li>
+                    <li><a href="manager_project.html">프로젝트관리</a></li>
+                    <li><a href="manager_news.html" class="select">뉴스관리</a></li>
+                    <li><a href="manager_category_exhibition.html">카테고리관리</a>
+                    </li>
+                </ul>
+            </div> <!--menu_sec-->
+            <div id="content_sec">
+                <h3>뉴스 등록</h3>
+                <form action="#" method="post">
+                    <ul class="table table_ko">
+                        <h3>국문</h3>
+                        <li>
+                            <label for="category">구분</label>
+                            <select name="category" id="category">
+                                <option value="카테고리">카테고리</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="title1_ko">제목</label>
+                            <input id="title1_ko" type="text" placeholder="첫번째 줄" autofocus>
+                        </li>
+                        <li class="list_info">
+                            <label for="title_info">내용</label>
+                            <textarea name="title_info" id="title_info" cols="" rows=""></textarea>
+                        </li>
+                        <li class="file_sec">
+                            <p>파일1</p>
+                            <label for="title_file1">파일선택</label>
+                            <input id="title_file1" type="file" value="" onchange="fileUp1()">
+                            <p class="file_name" id="file_name1">첨부된 파일 없음</p>
+                        </li>
+                        <li class="file_sec">
+                            <p>파일2</p>
+                            <label for="title_file11">파일선택</label>
+                            <input id="title_file11" type="file" value="" onchange="fileUp11()">
+                            <p class="file_name" id="file_name11">첨부된 파일 없음</p>
+                        </li>
+                        <li>
+                            <p class="file_guide">pdf 또는 doc, hwp 최대 1개 등록 가능, 2048KB</p>
+                        </li>
+                    </ul> <!--table-->
+                    <ul class="table table_en">
+                        <h3>영문</h3>
+                        <li>
+                            <label for="category">구분</label>
+                            <select name="category" id="category">
+                                <option value="카테고리">카테고리</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="title1_ko">제목</label>
+                            <input id="title1_ko" type="text" placeholder="첫번째 줄" autofocus>
+                        </li>
+                        <li class="list_info">
+                            <label for="title_info">내용</label>
+                            <textarea name="title_info" id="title_info" cols="" rows=""></textarea>
+                        </li>
+                        <li class="file_sec">
+                            <p>파일1</p>
+                            <label for="title_file2">파일선택</label>
+                            <input id="title_file2" type="file" value="" onchange="fileUp2()">
+                            <p class="file_name" id="file_name2">첨부된 파일 없음</p>
+                        </li>
+                        <li class="file_sec">
+                            <p>파일2</p>
+                            <label for="title_file22">파일선택</label>
+                            <input id="title_file22" type="file" value="" onchange="fileUp22()">
+                            <p class="file_name" id="file_name22">첨부된 파일 없음</p>
+                        </li>
+                        <li>
+                            <p class="file_guide">pdf 또는 doc, hwp 최대 1개 등록 가능, 2048KB</p>
+                        </li>
+                    </ul>
+                </form>
+                <div id="add_btn">
+                    <form action="#" method="post">
+                        <input type="button" value="등록">
+                    </form>
+                </div>
+                <div id="list_btn">
+                    <form action="#" method="post">
+                        <input type="button" value="목록">
+                    </form>
+                </div>
+            </div> <!--content_sec-->
+        </div> <!--content-->
+    </div> <!--wrap-->
+    <script type="text/javascript">
+        const file1 = document.getElementById('title_file1');
+        const file_name1 = document.getElementById('file_name1');
+        const file11 = document.getElementById('title_file11');
+        const file_name11 = document.getElementById('file_name11');
+        const file2 = document.getElementById('title_file2');
+        const file_name2 = document.getElementById('file_name2');
+        const file22 = document.getElementById('title_file22');
+        const file_name22 = document.getElementById('file_name22');
+        const file3 = document.getElementById('title_file3');
+        const file_name3 = document.getElementById('file_name3');
+        function fileUp1() {
+            let fileVal = file1.value;
+            file_name1.innerText = fileVal;
+        }
+        function fileUp11() {
+            let fileVal = file11.value;
+            file_name11.innerText = fileVal;
+        }
+        function fileUp2() {
+            let fileVal = file2.value;
+            file_name2.innerText = fileVal;
+        }
+        function fileUp22() {
+            let fileVal = file22.value;
+            file_name22.innerText = fileVal;
+        }
+        function fileUp3() {
+            let fileVal = file3.value;
+            file_name3.innerText = fileVal;
+        }
+    </script>
+</body>
+</html>

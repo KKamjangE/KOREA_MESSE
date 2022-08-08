@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAMESSE</title>
+    <link rel="stylesheet" href="./manager.css/reset.css">
+    <link rel="stylesheet" href="./manager.css/manager_main_add.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h3>코리아메쎄 관리모드</h3>
+            <a href="manager_login.html">로그아웃</a>
+        </header>
+        <div id="content">
+            <div id="menu_sec">
+                <ul id="main_menu">
+                    <li><a href="manager_main.html" class="select">메인관리</a></li>
+                    <li><a href="manager_exhibition.html">전시관리</a></li>
+                    <li><a href="manager_project.html">프로젝트관리</a></li>
+                    <li><a href="manager_news.html">뉴스관리</a></li>
+                    <li><a href="manager_category_exhibition.html">카테고리관리</a>
+                    </li>
+                </ul>
+            </div> <!--menu_sec-->
+            <div id="content_sec">
+                <h3>메인 등록</h3>
+                <form action="#" method="post">
+                    <ul class="table table_ko">
+                        <h3>국문</h3>
+                        <li class="title">
+                            <label for="title1_ko">전시명</label>
+                            <input id="title1_ko" type="text" placeholder="첫번째 줄" autofocus>
+                        </li>
+                        <li>
+                            <label for="title2_ko"></label>
+                            <input id="title2_ko" type="text" placeholder="두번째 줄">
+                        </li>
+                        <li>
+                            <label for="title_top_ko">상단</label>
+                            <input id="title_top_ko" type="text" placeholder="전시명 상단">
+                        </li>
+                        <li class="title">
+                            <label for="title_info1_ko">설명</label>
+                            <input id="title_info1_ko" type="text" placeholder="첫번째 줄">
+                        </li>
+                        <li>
+                            <label for="title_info2_ko"></label>
+                            <input id="title_info2_ko" type="text" placeholder="두번째 줄">
+                        </li>
+                        <li>
+                            <label for="title_address_ko">장소</label>
+                            <input id="title_address_ko" type="text" placeholder="장소">
+                        </li>
+                        <li class="line">
+                            <label for="title_link_ko">링크</label>
+                            <input id="title_link_ko" type="text" placeholder="절대 경로로 입력하세요.">
+                        </li>
+                    </ul> <!--table-->
+                    <ul class="table table_en">
+                        <h3>영문</h3>
+                        <li class="title">
+                            <label for="title1_en">전시명</label>
+                            <input id="title1_en" type="text" placeholder="첫번째 줄">
+                        </li>
+                        <li>
+                            <label for="title2_en"></label>
+                            <input id="title2_en" type="text" placeholder="두번째 줄">
+                        </li>
+                        <li>
+                            <label for="title_top_en">상단</label>
+                            <input id="title_top_en" type="text" placeholder="전시명 상단">
+                        </li>
+                        <li class="title">
+                            <label for="title_info1_en">설명</label>
+                            <input id="title_info1_en" type="text" placeholder="첫번째 줄">
+                        </li>
+                        <li>
+                            <label for="title_info2_en"></label>
+                            <input id="title_info2_en" type="text" placeholder="두번째 줄">
+                        </li>
+                        <li>
+                            <label for="title_address_en">장소</label>
+                            <input id="title_address_en" type="text" placeholder="장소">
+                        </li>
+                        <li class="line">
+                            <label for="title_link_en">링크</label>
+                            <input id="title_link_en" type="text" placeholder="절대 경로로 입력하세요.">
+                        </li>
+                    </ul>
+                    <ul class="table">
+                        <h4>대표사진</h4>
+                        <p>jpg 또는 png 최대 1장 등록 가능, 1280*1280 px, 500kb</p>
+                        <li class="file_sec">
+                            <p>첨부</p>
+                            <label for="title_file">첨부</label>
+                            <input id="title_file" type="file" value="" onchange="fileUp()">
+                            <p class="file_name" id="file_name">파일이름</p>
+                            <span style="display: none;">삭제</span>
+                        </li>
+                    </ul>
+                </form>
+                <div id="add_btn">
+                    <form action="#" method="post">
+                        <input type="button" value="등록">
+                    </form>
+                </div>
+            </div> <!--content_sec-->
+        </div> <!--content-->
+    </div> <!--wrap-->
+    <script type="text/javascript">
+        const file = document.getElementById('title_file');
+        const file_name = document.getElementById('file_name');
+        function fileUp() {
+            let fileVal = file.value;
+            file_name.innerText = fileVal;
+        }
+    </script>
+</body>
+</html>

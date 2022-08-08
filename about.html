@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAMESSE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <header></header> <!--header-->
+        <div id="header_bottom"></div>
+
+        <div id="about_modal">
+            <img id="modal_close_btn" src="./assets/img/icon/close-btn.svg" alt="close-btn">
+            <div id="modal_content">
+                <iframe src="https://player.vimeo.com/video/317414590?h=dd71baa3d5?enablejsapi=1&version=3&playerapiid=ytplayer&muted=true" width="75%" height="75%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="main_banner">
+            <div id="main_content">
+                <div class="wBox">
+                    <div class="sizeBox">
+                        <div id="main_text">
+                            <p>
+                                코리아메쎄는 전시회 기획, 운영, 디자인, 마케팅 서비스에 특화되어 있는 회사입니다.<br>
+                                해외전시회 및 행사에 특화되어 있는 회사로서 매년 미국, 중국, 일본 등 50여개의 전시회를 진행하는<br>
+                                한국의 대표적인 전시 에이전시입니다.
+                            </p>
+                        </div> <!--mainText-->
+                        <span id="showreel_btn"><p>코리아메쎄 비밀에 대해 알아보기</p><img src="./assets/img/icon/angle-right.svg" alt="angle-right"></span>
+                    </div> <!--sizeBox-->
+                </div> <!--wBox-->
+            </div> <!--main_content-->
+            <video src="./assets/media/about-header-bg.mp4" autoplay muted loop></video>
+        </div> <!--main_banner-->
+
+        <div id="about_bg">
+            <div id="about_content">
+                <h3>대한민국 대표 전시 에이전시, 코리아메쎄</h3>
+                <h3>어디 한번 빠져 볼까요?</h3>
+            </div>
+            <video src="./assets/media/about-copy-bg.mp4" autoplay muted loop></video>
+        </div> <!--about_bg-->
+
+        <div id="content01">
+
+            <div class="side_title">What we do</div>
+
+            <div id="do_01" class="swiper_overflow">
+                <div class="do_content">
+                    <h3>해외 마케팅</h3>
+                    <ul>
+                        <li>바이어 발굴 및 매칭</li>
+                        <li>바이어 홍보</li>
+                        <li>바이어 상담 주선</li>
+                        <li>홍보 매거진 발간</li>
+                    </ul>
+                    <p>
+                        모바일 디바이스에서만 가능한 독창적인 경험을 설계합니다.<br>
+                        다양한 플랫폼에서 리치하고 인터랙티브한 콘텐츠를 일관되게 체험할 수 있는 UX/UI 설계로 모바일에 특화된 경험을 제공합니다.
+                    </p>
+                </div> <!--do_content-->
+                <div class="swiper mySwiper cont1Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/main/organization-3.jpg" alt="organization-3">
+                            <div class="slide_hover">
+                                <p>전시 기획 및 운영</p>
+                                <a href="#">대표 프로젝트 바로가기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                </div> <!--swiper-->
+            </div> <!--do_01-->
+
+            <div class="side_title side_title_mob">What we do</div>
+
+            <div id="do_02" class="swiper_overflow">
+                <div class="do_content">
+                    <h3>해외 전시회</h3>
+                    <ul>
+                        <li>전시 기획 및 운영</li>
+                        <li>고객 맞춤형 전시 발굴</li>
+                        <li>전시 부스 임차 및 관리</li>
+                    </ul>
+                    <p>
+                        기업이 추구하는 가치에 대한 이해와 브랜드 분석을 통해 진보적이고 새로운 형태의 디자인과 콘텐츠를 기획 제작합니다.<br>
+                        사용자를 우선한 UI/UX를 통하여 기업의 가치를 높이는 통합 플랫폼을 구축합니다.
+                    </p>
+                </div> <!--do_content-->
+                <div class="swiper mySwiper cont1Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/main/organization-3.jpg" alt="organization-3"></div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                </div> <!--swiper-->
+            </div> <!--do_02-->
+
+            <div class="side_title side_title_mob">What we do</div>
+
+            <div id="do_03" class="swiper_overflow">
+                <div class="do_content">
+                    <h3>해외 상담회</h3>
+                    <ul>
+                        <li>수출 상담</li>
+                        <li>바이어 초청</li>
+                        <li>업무 협약식</li>
+                    </ul>
+                    <p>
+                        기획부터 후반 작업까지 전 과정을 일체화한 인하우스 시스템으로 운영합니다.<br>
+                        영상의 기획, 시나리오, 촬영, 후반작업 등 모든 과정을 아우르는 역량을 자체적으로 갖추고 일관된 디자인 체계가 구현된 프리미엄 영상 솔루션을 제공합니다.
+                    </p>
+                </div> <!--do_content-->
+                <div class="swiper mySwiper cont1Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/main/organization-3.jpg" alt="organization-3"></div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                </div> <!--swiper-->
+            </div> <!--do_03-->
+
+            <div class="side_title side_title_mob">What we do</div>
+
+            <div id="do_04" class="swiper_overflow">
+                <div class="do_content">
+                    <h3>해외 행사기획</h3>
+                    <ul>
+                        <li>바이어 발굴 및 매칭</li>
+                        <li>바이어 홍보</li>
+                        <li>바이어 상담 주선</li>
+                        <li>홍보 매거진 발간</li>
+                    </ul>
+                    <p>
+                        기업이 추구하는 가치에 대한 이해와 브랜드 분석을 통해 진보적이고 새로운 형태의 디자인과 콘텐츠를 기획 제작합니다.<br>
+                        사용자를 우선한 UI/UX를 통하여 기업의 가치를 높이는 통합 플랫폼을 구축합니다.
+                    </p>
+                </div> <!--do_content-->
+                <div class="swiper mySwiper cont1Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/main/organization-3.jpg" alt="organization-3"></div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                </div> <!--swiper-->
+            </div> <!--do_04-->
+
+            <div class="side_title side_title_mob">What we do</div>
+
+            <div id="do_05" class="swiper_overflow">
+                <div class="do_content">
+                    <h3>전시 부스 디자인</h3>
+                    <ul>
+                        <li>3D 디자인</li>
+                        <li>그래픽 디자인</li>
+                        <li>부스 시공</li>
+                    </ul>
+                    <p>
+                        기획부터 후반 작업까지 전 과정을 일체화한 인하우스 시스템으로 운영합니다.<br>
+                        영상의 기획, 시나리오, 촬영, 후반작업 등 모든 과정을 아우르는 역량을 자체적으로 갖추고 일관된 디자인 체계가 구현된 프리미엄 영상 솔루션을 제공합니다.
+                    </p>
+                </div> <!--do_content-->
+                <div class="swiper mySwiper cont1Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/main/organization-3.jpg" alt="organization-3"></div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                </div> <!--swiper-->
+            </div> <!--do_05-->
+
+        </div> <!--content01-->
+
+        <div id="content02">
+
+            <div class="side_title">History</div>
+
+            <div id="history_01" class="swiper_overflow">
+                <div class="history_content">
+                    <h3>2020</h3>
+                </div> <!--history_content-->
+                <div class="swiper mySwiper history_swiper">
+                    <div class="top_line"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="history_year">2022</p>
+                            <div class="circle"></div>
+                            <p>K-스튜디오 위탁 운영(KOTRA)</p>
+                            <p>MegaShow 계약 체결</p>
+                            <p>CES2022 미국 라스베이거스 소비자 전자제품전 40개사 참가 대행(KOTRA, 경기콘텐츠진흥원, KICTA)</p>
+                            <p>라스베이거스 ASD Market Week 20개사 참가 대행(한국무역협회)</p>
+                            <p>Alab Health 2022 한국관 운영 대행(원주 의료기기 테크노 밸리)</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2021</p>
+                            <div class="circle"></div>
+                            <p>대한민국 청소년 온라인 박람회 경제금융교육존 개발 및 매체별 온라인 캠페인(한국개발연구원)</p>
+                            <p>K-스튜디오 위탁 운영(KOTRA)</p>
+                            <p>홍콩 Mega Show 독점 에이전시 계약 체결(Comasia Limited)</p>
+                            <p>수출지원기반활용사업 수출바우처 디자인 및 홈페이지 제작 수행사 선정</p>
+                            <p>CES2021 K-Startup 온라인 통합관 개발 및 참가기업 영상 제작/웨비나 행사 운영(창업진흥원)</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2020</p>
+                            <div class="circle"></div>
+                            <p>대한민국 청소년 교육기부 온라인 박람회 경제금융교육존 개발(한국개발연구원)</p>
+                            <p>하이서울기업 Virtual Cluster 온라인 플랫폼 개발(서울산업진흥원)</p>
+                            <p>경기도 우수상품 디자인 개선 지원사업 수행(경기도 주식회사)</p>
+                            <p>온라인 플랫폼 개발 전문 기업부설연구소 설립(한국산업기술진흥협회)</p>
+                        </div>
+                    </div>
+                </div> <!--history_swiper-->
+            </div> <!--history_01-->
+
+            <div id="history_02" class="swiper_overflow">
+                <div class="history_content">
+                    <h3>2010</h3>
+                </div> <!--history_content-->
+                <div class="swiper mySwiper history_swiper">
+                    <div class="top_line"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="history_year">2019</p>
+                            <div class="circle"></div>
+                            <p>한국지능정보사회진흥원 ‘ICT기술개발사업’ 홍보 동영상 제작(한국지능정보사회진흥원)</p>
+                            <p>수출지원기반활용사업 수출바우처 지원사업 홈페이지 제작 수행사 선정</p>
+                            <p>수출지원기반활용사업  수출바우처 지원사업 홍보 영상 제작 수행사 선정</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2018</p>
+                            <div class="circle"></div>
+                            <p>문정동 사옥 이전</p>
+                            <p>수출지원기반활용 사업 수출바우처 해외홍보/광고/전시회 수행사 선정</p>
+                            <p>KOTRA 하반기 유망내수기업 e카탈로그 제작 사업 수행</p>
+                            <p>경기 G디자인 개발 지원 사업</p>
+                            <p>판교테크노밸리 창업존 입주기업 디자인 수행(얼스랩 외 29개 업체)</p>
+                            <p>농식품판로개척사업 마케팅 지원 사업</p>
+                            <p>수출바우처 홍보동영상 수행사 선정</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2017</p>
+                            <div class="circle"></div>
+                            <p>수출바우처 디자인 개발 수행사 선정</p>
+                            <p>서울시우수기업브랜드 기업 선정(BS분야)</p>
+                            <img src="./assets/img/about/history-hs.svg" alt="history-hs" style="width: 48px; height: auto;">
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2016</p>
+                            <div class="circle"></div>
+                            <p>수출프론티어지원사업 디자인 수행사(경기수출기업협회)</p>
+                            <p>수출연계형지원사업 디자인 수행사</p>
+                            <p>차이나하이웨이 자율마케팅 수행사 선정</p>
+                            <p>1인창조기업 마케팅 지원사업 수행사 선정</p>
+                            <p>수출기업화사업 수출마케팅 수행사 선정</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2015</p>
+                            <div class="circle"></div>
+                            <p>대한민국 굿디자인 수상 (자사 상품 크리스탈 램프)</p>
+                            <img src="./assets/img/about/history-gd.svg" alt="history-gd" style="width: 37px; height: auto;">
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2014</p>
+                            <div class="circle"></div>
+                            <p>인도네시아 소비재전시회, 중국 이유 상품전, 광저우 켄톤페어 계약 체결</p>
+                            <p>라스베가스 소비재전시회 계약 체결</p>
+                            <p>추계 동경 국제선물용품 전시회 대행 (중소기업진흥공단 외 142개사)</p>
+                            <p>중소기업청 수출역량강화사업 선정</p>
+                            <p>1인 창조기업 마케팅지원 사업 수행기관 선정</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2012</p>
+                            <div class="circle"></div>
+                            <p>일본디자인협회 업무 협약 체결</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2011</p>
+                            <div class="circle"></div>
+                            <p>자사 제품 개발(핸드폰케이스 S-Zoom)</p>
+                            <p>2011 추계 동경선물용품박람회 참가 대행 (중소기업진흥공단 외 85개사 참가)</p>
+                            <p>한국산업단지공단 선정 디자인개발 수행사</p>
+                            <p>IF 디자인어워드 2011 선정 (매립형 자전거 거치대)</p>
+                            <img src="./assets/img/about/history-if.svg" alt="history-if" style="width: 35px; height: auto;">
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2010</p>
+                            <div class="circle"></div>
+                            <p>동경기프트쇼 전시디자인 우수디자인상 수상 (Tokyo Giftshow Design Award 2010)</p>
+                            <p>인천시 우수 바이어 초청 수출상담회 개최 (33개국 바이어와 102개 업체 수출상담)</p>
+                            <p>경기도 G디자인 개발 수행사 선정</p>
+                            <p>경기중소기업종합지원센터 신제품디자인개발 수행사 선정</p>
+                        </div>
+                    </div>
+                </div> <!--history_swiper-->
+            </div> <!--history_02-->
+
+            <div id="history_03" class="swiper_overflow">
+                <div class="history_content">
+                    <h3>2000</h3>
+                </div> <!--history_content-->
+                <div class="swiper mySwiper history_swiper">
+                    <div class="top_line"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="history_year">2009</p>
+                            <div class="circle"></div>
+                            <p>경기중소기업종합지원센터 제품디자인개발 수행사 선정</p>
+                            <p>대한민국 디지털이노베이션 대통령상 수상 (지능형교육로봇, 주식회사 이디)</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2008</p>
+                            <div class="circle"></div>
+                            <p>중소기업청 신기술 디자인 지원사업 디자인 수행</p>
+                            <p>대전테크노파크(바우처 지원사업) 디자인 업체 선정</p>
+                            <p>2008년 한국산업 및 기업총람 발행 제작 (460면 발행 190개업체 참여)</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2007</p>
+                            <div class="circle"></div>
+                            <p>대한민국 굿디자인 수상 (카라파크 외 6개 업체)</p>
+                            <p>중소기업청 신기술 디자인 지원사업 주관업체 선정</p>
+                            <p>중소기업청 쿠폰제 경영컨설팅사 선정</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="history_year">2005</p>
+                            <div class="circle"></div>
+                            <p>대한무역투자진흥공사 지정 KOREATRADE 광고대행사 단독 계약 체결</p>
+                            <p>대한무역투자진흥공사 KOREATRADE 발행 제작</p>
+                            <p>서울시 산업진흥재단 학여울전시장 해외홍보물 시각 및 영상 제작업체 선정</p>
+                            <p>(주)트레이드월드 설립</p>
+                        </div>
+                    </div>
+                </div> <!--history_swiper-->
+            </div> <!--history_03-->
+
+        </div> <!--content02-->
+        
+        <div id="content03">
+
+            <div class="side_title">Our clients</div>
+
+            <div id="content03Mob">
+                <div id="clients_content">
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-1.png" alt="client-1">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-2.png" alt="client-2">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-3.png" alt="client-3">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-4.png" alt="client-4">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-5.png" alt="client-5">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-6.png" alt="client-6">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-7.png" alt="client-7">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-8.png" alt="client-8">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-9.png" alt="client-9">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-10.png" alt="client-10">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-11.png" alt="client-11">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-12.png" alt="client-12">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-13.png" alt="client-13">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-14.png" alt="client-14">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-15.png" alt="client-15">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-16.png" alt="client-16">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-17.png" alt="client-17">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-18.png" alt="client-18">
+                    </div>
+                    <div class="clients_logo">
+                        <img src="./assets/img/about/client-19.png" alt="client-19">
+                    </div>
+                </div> <!--clients_content-->
+            </div>
+
+        </div> <!--content03-->
+        
+        <footer id="footer"></footer> <!--footer-->
+        
+    </div> <!--wrap-->
+    
+    <script src="js/about.js"></script>
+</body>
+</html>

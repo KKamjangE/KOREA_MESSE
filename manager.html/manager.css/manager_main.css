@@ -1,0 +1,198 @@
+@charset "utf-8";
+html, body, #wrap{
+    height: 100%;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #000;
+    text-align: center;
+}
+header h3{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 60px;
+}
+header a{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 60px;
+}
+#content{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#menu_sec{
+    display: flex;
+    justify-content: center;
+    width: 193px;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+#main_menu{
+    padding-top: 107px;
+}
+#main_menu li{
+    margin-bottom: 17px;
+}
+#main_menu li a{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #666;
+}
+#main_menu .submenu{
+    margin-top: 17px;
+    margin-left: 10px;
+}
+#main_menu .submenu li{}
+#main_menu .submenu li a{}
+#main_menu .submenu li a img{
+    width: 6px;
+    margin-left: 5px;
+}
+#main_menu li a.select{
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#content_sec{
+    position: relative;
+    width: 100%;
+    padding: 104px 60px 104px 32px;
+}
+#content_sec>h3{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+#table{}
+#table #title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #000;
+    border-width: 1px 0;
+}
+#table #title p{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#table #title p.nub{
+    width: 10%;
+}
+#table #title p.title{
+    width: 50%;
+}
+#table #title p.address{
+    width: 10%;
+}
+#table #title p.bg{
+    width: 10%;
+}
+#table #title p.link{
+    width: 10%;
+}
+#table #title p.manager{
+    width: 10%;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 126px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.list .list_nub{
+    display: flex;
+    width: 10%;
+}
+.list .list_nub p{
+    padding: 7px 23px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.list .list_title{
+    width: 50%;
+}
+.list .list_title h3{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.list .list_address{
+    width: 10%;
+}
+.list .list_address p{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.list .list_bg{
+    width: 10%;
+}
+.list .list_bg img{
+    width: 82px;
+    height: 62px;
+    object-fit: cover;
+}
+.list .list_link{
+    width: 10%;
+}
+.list .list_link p{
+    word-break: break-all;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.list .list_manager{
+    display: flex;
+    width: 10%;
+}
+.list .list_manager input{
+    width: 55px;
+    height: 32px;
+    background-color: #fff;
+    font-size: 1.4em;
+    font-weight: 400;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: .2s;
+}
+.list .list_manager input:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+#add_btn{
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+}
+#add_btn input{
+    padding: 9px 32px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    transition: .2s;
+}
+#add_btn input:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}

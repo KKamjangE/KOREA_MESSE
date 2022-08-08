@@ -1,0 +1,23 @@
+호스팅 환경
+Tomcat 8.0.x / JSP 2.3 / Servlet 3.1 / OpenJDK 1.8.x / MariaDB 10.1.x UTF-8 (다국어사이트에 적합)
+
+
+hosting.cafe24.com
+host : kmsite.cafe24.com
+ID : kmsite
+PW : tworld9022
+DB/FTP/SSH PW : stworld9022
+
+
+
+blog : https://blog.naver.com/tradeworld2021
+youtube : https://www.youtube.com/channel/UCw4gT-6L-uqHE6WTUimpDJQ
+
+
+
+문의 폼 받는 메일 주소 : okt@tradeworld.co.kr
+메일서버 : 1차적으로 cafe24 메일 서버 확인해주시고, 안되면 google 계정 공유해드리겠습니다.
+
+
+
+관리모드 패스워드 지정 : tworld9022!@#

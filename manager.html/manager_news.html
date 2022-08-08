@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAMESSE</title>
+    <link rel="stylesheet" href="./manager.css/reset.css">
+    <link rel="stylesheet" href="./manager.css/manager_news.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h3>코리아메쎄 관리모드</h3>
+            <a href="manager_login.html">로그아웃</a>
+        </header>
+        <div id="content">
+            <div id="menu_sec">
+                <ul id="main_menu">
+                    <li><a href="manager_main.html">메인관리</a></li>
+                    <li><a href="manager_exhibition.html">전시관리</a></li>
+                    <li><a href="manager_project.html">프로젝트관리</a></li>
+                    <li><a href="manager_news.html" class="select">뉴스관리</a></li>
+                    <li><a href="manager_category_exhibition.html">카테고리관리</a>
+                    </li>
+                </ul>
+            </div> <!--menu_sec-->
+            <div id="content_sec">
+                <h3>뉴스 관리</h3>
+                <div class="view_select">
+                    <p>최대 표시 개수</p>
+                    <select name="view_num" id="view_num">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <ul id="table">
+                    <li id="title">
+                        <p class="nub">번호</p>
+                        <p class="category">카테고리</p>
+                        <p class="name">프로젝트명</p>
+                        <p class="file">파일첨부</p>
+                        <p class="manager">관리</p>
+                    </li>
+                    <li class="list">
+                        <div class="list_nub"><p>1</p></div>
+                        <div class="list_category">
+                            <p>전시정보</p>
+                        </div>
+                        <div class="list_name">
+                            <h3>프랜드 뷰티퓨어 브랜드 리뉴얼</h3>
+                        </div>
+                        <p class="list_file">
+                            <a href="#" download="#"></a>
+                        </p>
+                        <div class="list_manager">
+                            <form action="#" method="post">
+                                <input type="button" value="수정">
+                            </form>
+                            <form action="#" method="post">
+                                <input type="button" value="삭제">
+                            </form>
+                        </div>
+                    </li>
+                </ul> <!--table-->
+                <div class="pagination">
+                    <a href="#" class="angle" id="angle_left"><img src="./icon/angle-left-black.svg" alt="angle-left-black"></a>
+                    <a href="#" class="select">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <p>...</p>
+                    <a href="#">24</a>
+                    <a href="#" class="angle" id="angle_right"><img src="./icon/angle-right-black.svg" alt="angle-right-black"></a>
+                </div>
+                <div id="add_btn">
+                    <form action="#" method="post">
+                        <input type="button" value="등록">
+                    </form>
+                </div>
+            </div> <!--content_sec-->
+        </div> <!--content-->
+    </div> <!--wrap-->
+    <script type="text/javascript">
+        const angleLeft = document.getElementById('angle_left');
+        const angleRight = document.getElementById('angle_right');
+        angleLeft.addEventListener('mouseenter', function(){
+            angleLeft.firstChild.src = './icon/angle-left.svg'
+        })
+        angleLeft.addEventListener('mouseleave', function(){
+            angleLeft.firstChild.src = './icon/angle-left-black.svg'
+        })
+
+        angleRight.addEventListener('mouseenter', function(){
+            angleRight.firstChild.src = './icon/angle-right.svg'
+        })
+        angleRight.addEventListener('mouseleave', function(){
+            angleRight.firstChild.src = './icon/angle-right-black.svg'
+        })
+    </script>
+</body>
+</html>

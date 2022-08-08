@@ -1,0 +1,223 @@
+@charset "utf-8";
+html, body, #wrap{
+    height: 100%;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #000;
+    text-align: center;
+}
+header h3{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 60px;
+}
+header a{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 60px;
+}
+#content{
+    display: flex;
+    justify-content: space-between;
+}
+#menu_sec{
+    display: flex;
+    justify-content: center;
+    width: 193px;
+    background-color: #f7f7f7;
+}
+#main_menu{
+    padding-top: 107px;
+}
+#main_menu li{
+    margin-bottom: 17px;
+}
+#main_menu li a{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #666;
+}
+#main_menu .submenu{
+    margin-top: 17px;
+    margin-left: 10px;
+}
+#main_menu .submenu li{}
+#main_menu .submenu li a{}
+#main_menu .submenu li a img{
+    width: 6px;
+    margin-left: 5px;
+}
+#main_menu li a.select{
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#content_sec{
+    position: relative;
+    width: 100%;
+    padding: 104px 60px 196px 32px;
+}
+#content_sec>h3{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+#add_btn{
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+}
+#add_btn input{
+    padding: 9px 32px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    transition: .2s;
+}
+#add_btn input:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.table{
+    border-bottom: 1px solid #000;
+    padding: 32px 0;
+}
+.table_ko{
+    border-top: 1px solid #000;
+}
+.table h3{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.table h4{
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 33px 0 24px;
+}
+.table p{
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 28px;
+}
+.table li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.table li.title{
+    margin-bottom: 0;
+}
+.table li.list_info{
+    display: flex;
+    align-items: flex-start;
+}
+.table li label{
+    display: inline-block;
+    width: 4%;
+    margin-right: 10px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.table li input{
+    font-size: 1.4em;
+    font-weight: 400;
+    width: 96%;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+.table li select{
+    font-size: 1.4em;
+    font-weight: 400;
+    width: 96%;
+    padding: 12px 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+.table li select option{
+    font-size: 1em;
+    font-weight: 400;
+}
+.table li p.file_guide{
+    width: 95%;
+    font-size: 1em;
+    font-weight: 400;
+    color: #999;
+}
+.table li textarea{
+    width: 96%;
+    height: 432px;
+    resize: none;
+}
+
+.table .file_sec{
+    display: flex;
+    justify-content: flex-start;
+}
+.table .file_sec p{
+    width: 4.5%;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0;
+}
+.table .file_sec p.file_name{
+    width: 20%;
+    word-break: break-all;
+}
+.table .file_sec input{
+    display: none;
+}
+.table .file_sec label{
+    padding: 13px 5px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    text-align: center;
+    transition: .2s;
+}
+.table .file_sec label:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+#list_btn{
+    position: absolute;
+    bottom: 100px;
+    left: 32px;
+}
+#list_btn input{
+    padding: 9px 32px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    transition: .2s;
+}
+#list_btn input:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}

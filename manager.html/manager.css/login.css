@@ -1,0 +1,25 @@
+@charset "utf-8";
+#wrap, html, body{
+    height: 100%;
+}
+#wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    display: block;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+#password{
+    display: block;
+    width: 252px;
+    font-size: 1.4em;
+    height: 30px;
+    padding: 2px 0;
+    border-width: 0 0 1px 0;
+}
+#password:focus{
+    outline: none;
+}

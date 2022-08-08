@@ -1,0 +1,19 @@
+/******* twkm Brand Font ********/
+@font-face {
+	font-family: 'PT Areka Neue';
+	font-weight: 200;
+    src: local('PT Areka Neue - Light'),
+    url('../fonts/PT\ Areka\ Neue\ -\ Light.otf') format('embedded-opentype'),
+    url('../fonts/PT-Areka-Neue-Light.woff') format('woff'),
+    url('../fonts/PT-Areka-Neue-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PT Areka Neue';
+	font-weight: 400;
+    src: local('PT Areka Neue - Bold'),
+    url('../fonts/PT\ Areka\ Neue\ -\ Bold.otf') format('embedded-opentype'),
+    url('../fonts/PT-Areka-Neue-Bold.woff') format('woff'),
+    url('../fonts/PT-Areka-Neue-Bold.ttf') format('truetype');
+}
+/******* //twkm Brand Font ********/
