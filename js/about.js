@@ -27,26 +27,49 @@ $(document).ready(function(){
             }
         }
 
-        console.log(scrollVal)
-        if(scrollVal >= 1100 && scrollVal <= 1800){
-            $('#about_content h3:first-child').stop().animate({
-                opacity: 1,
-            }, 300)
-        }else{
-            $('#about_content h3:first-child').stop().animate({
-                opacity: 0,
-            }, 300)
-        }
-        if(scrollVal >= 1500 && scrollVal <= 2300){
-            $('#about_content h3:last-child').stop().animate({
-                opacity: 1,
-            }, 300)
-        }else{
-            $('#about_content h3:last-child').stop().animate({
-                opacity: 0,
-            }, 300)
-        }
+        // if(scrollVal >= 1100 && scrollVal <= 1800){
+        //     $('#about_content h3:first-child').stop().animate({
+        //         opacity: 1,
+        //     }, 300)
+        // }else{
+        //     $('#about_content h3:first-child').stop().animate({
+        //         opacity: 0,
+        //     }, 300)
+        // }
+        // if(scrollVal >= 1500 && scrollVal <= 2300){
+        //     $('#about_content h3:last-child').stop().animate({
+        //         opacity: 1,
+        //     }, 300)
+        // }else{
+        //     $('#about_content h3:last-child').stop().animate({
+        //         opacity: 0,
+        //     }, 300)
+        // }
     })
+
+    gsap.set('#about_content h3:first-child', { opacity: 1 });
+    gsap.set('#about_content h3:last-child', { opacity: 1 });
+    gsap.to('#about_content h3:first-child', { //text moving
+        duration: 1, opacity: 0,
+        scrollTrigger: {
+            trigger: '#about_content h3:first-child',
+            start: "50% 30%",
+            end: "bottom 20%",
+            scrub: 1,
+            markers: false,
+        }
+    });
+
+    gsap.to('#about_content h3:last-child', { //text moving
+        duration: 1, opacity: 0,
+        scrollTrigger: {
+            trigger: '#about_content h3:last-child',
+            start: "50% 30%",
+            end: "bottom 20%",
+            scrub: 1,
+            markers: false,
+        }
+    });
     
     $('#showreel_btn').on('click', function(){ //madal On
         $('#about_modal').css({
