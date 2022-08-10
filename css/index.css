@@ -509,7 +509,7 @@ header{
 }
 #organization_sec #organizationText_sec .organization_bg{
     padding-top: 112px;
-    height: 20vh;
+    height: 15vh;
     background-color: #000;
 }
 #organization_sec #organizationText_sec .organization_title{
@@ -527,7 +527,7 @@ header{
     line-height: 20px;
 }
 #organization_sec #organizationText_sec ul{
-    height: 30vh;
+    height: 35vh;
     background-color: #000;
 }
 #organization_sec #organizationText_sec ul p{
