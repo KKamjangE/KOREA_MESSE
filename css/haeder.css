@@ -267,9 +267,9 @@ header a:hover {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: 5%;
+        margin-left: 24px;
         text-align: left;
-        width: 50%;
+        width: auto;
         height: 80px;
     }
     
@@ -314,7 +314,8 @@ header a:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 5%;
+        padding: 0;
+        margin-right: 24px;
         width: auto;
     }
     #sideMenu_sec span{

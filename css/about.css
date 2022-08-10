@@ -177,6 +177,7 @@ header{}
     font-size: 1.6em;
     font-weight: 400;
     color: #999;
+    height: 21px;
     margin-right: 32px;
 }
 .do_content p{

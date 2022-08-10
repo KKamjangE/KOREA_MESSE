@@ -31,7 +31,7 @@ body{
 
 @media all and (max-width: 1440px){
     .sizeBox{
-        padding: 33px 5%;
+        padding: 33px 24px;
     }
     .wBox{
         max-width: 1440px;
