@@ -556,7 +556,7 @@ header{
         display: block;
         font-size: 1.6em;
         font-weight: 400;
-        margin-bottom: 16px;
+        margin-bottom: 6px;
         text-decoration: underline;
     }
     #content02 #news_content ul li .news_info span.close_btn{
