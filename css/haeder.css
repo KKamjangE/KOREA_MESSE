@@ -158,7 +158,6 @@ header a:hover {
 }
 
 #hbg_body #request_menu {
-    opacity: 0;
     margin-bottom: 84px;
 }
 
@@ -268,7 +267,7 @@ header a:hover {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: 24px;
+        margin-left: 5%;
         text-align: left;
         width: 50%;
         height: 80px;
@@ -314,11 +313,13 @@ header a:hover {
     #sideMenu_sec {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 0 2%;
-        width: 20%;
+        justify-content: space-between;
+        padding: 0 5%;
+        width: auto;
     }
-    
+    #sideMenu_sec span{
+        margin-left: 30px;
+    }
     #sideMenu_sec span:hover {
         cursor: pointer;
     }
@@ -364,7 +365,7 @@ header a:hover {
     }
     
     #hbg_body #hbg_main_menu {
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 25px;
     }
     
@@ -403,7 +404,6 @@ header a:hover {
     }
     
     #hbg_body #request_menu {
-        opacity: 0;
         margin-bottom: 60px;
     }
     

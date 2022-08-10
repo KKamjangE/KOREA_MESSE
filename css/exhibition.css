@@ -282,7 +282,7 @@ header{
         z-index: 500;
         width: 90%;
         padding: 0 5%;
-        height: 256px;
+        height: 265px;
         background-color: #000;
     }
     #search_pop form{
@@ -321,11 +321,12 @@ header{
         position: absolute;
         top: 45%;
         right: 5%;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         border: 0;
         background-color: rgba(0, 0, 0, 0);
         background-image: url(../assets/img/icon/search-icon.svg);
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -352,13 +353,14 @@ header{
     #search_btn_mob_pop{
         display: inline-block;
         position: absolute;
-        top: 48%;
+        top: 45%;
         right: 5%;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         background-image: url(../assets/img/icon/search-icon.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
     }
     #search_btn_mob_pop:hover{
         cursor: pointer;
